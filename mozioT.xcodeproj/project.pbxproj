@@ -29,6 +29,8 @@
 		E3BD6F1F1D78AB2D00770AD7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F1C1D78AB2D00770AD7 /* Response.swift */; };
 		E3BD6F221D78ACA100770AD7 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F211D78ACA100770AD7 /* TestRequest.swift */; };
 		E3BD6F251D78BC2800770AD7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F241D78BC2800770AD7 /* NavigationController.swift */; };
+		E3BD6F281D78BF2500770AD7 /* MedicalTestResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F261D78BF2500770AD7 /* MedicalTestResultController.swift */; };
+		E3BD6F291D78BF2500770AD7 /* MedicalTestResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BD6F271D78BF2500770AD7 /* MedicalTestResultController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		E3BD6F1C1D78AB2D00770AD7 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E3BD6F211D78ACA100770AD7 /* TestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
 		E3BD6F241D78BC2800770AD7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E3BD6F261D78BF2500770AD7 /* MedicalTestResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalTestResultController.swift; sourceTree = "<group>"; };
+		E3BD6F271D78BF2500770AD7 /* MedicalTestResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTestResultController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,8 @@
 		E3BD6F031D789A3B00770AD7 /* Test Results */ = {
 			isa = PBXGroup;
 			children = (
+				E3BD6F261D78BF2500770AD7 /* MedicalTestResultController.swift */,
+				E3BD6F271D78BF2500770AD7 /* MedicalTestResultController.xib */,
 			);
 			name = "Test Results";
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 			files = (
 				E3BD6EE01D78938D00770AD7 /* LaunchScreen.storyboard in Resources */,
 				E3BD6EDD1D78938D00770AD7 /* Assets.xcassets in Resources */,
+				E3BD6F291D78BF2500770AD7 /* MedicalTestResultController.xib in Resources */,
 				E3BD6EDB1D78938D00770AD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +363,7 @@
 				E3BD6EF61D78954B00770AD7 /* Theme.swift in Sources */,
 				E3BD6EF21D78947800770AD7 /* TableViewController.swift in Sources */,
 				E3BD6F221D78ACA100770AD7 /* TestRequest.swift in Sources */,
+				E3BD6F281D78BF2500770AD7 /* MedicalTestResultController.swift in Sources */,
 				E3BD6F141D78A14800770AD7 /* Result.swift in Sources */,
 				E3BD6F001D789A0200770AD7 /* AllTestsTableViewController.swift in Sources */,
 				E3BD6F251D78BC2800770AD7 /* NavigationController.swift in Sources */,
