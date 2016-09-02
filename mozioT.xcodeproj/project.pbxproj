@@ -31,6 +31,11 @@
 		E3BD6F251D78BC2800770AD7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F241D78BC2800770AD7 /* NavigationController.swift */; };
 		E3BD6F281D78BF2500770AD7 /* MedicalTestResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F261D78BF2500770AD7 /* MedicalTestResultController.swift */; };
 		E3BD6F291D78BF2500770AD7 /* MedicalTestResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BD6F271D78BF2500770AD7 /* MedicalTestResultController.xib */; };
+		E3BD6F2B1D797AE000770AD7 /* TestDetailTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BD6F2A1D797AE000770AD7 /* TestDetailTableController.xib */; };
+		E3BD6F2E1D79830300770AD7 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BD6F2D1D79830300770AD7 /* QuestionView.xib */; };
+		E3BD6F301D7983FE00770AD7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F2F1D7983FE00770AD7 /* BaseView.swift */; };
+		E3BD6F321D79848500770AD7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD6F311D79848500770AD7 /* QuestionView.swift */; };
+		E3BD6F341D7997B600770AD7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BD6F331D7997B600770AD7 /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		E3BD6F241D78BC2800770AD7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		E3BD6F261D78BF2500770AD7 /* MedicalTestResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalTestResultController.swift; sourceTree = "<group>"; };
 		E3BD6F271D78BF2500770AD7 /* MedicalTestResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTestResultController.xib; sourceTree = "<group>"; };
+		E3BD6F2A1D797AE000770AD7 /* TestDetailTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestDetailTableController.xib; sourceTree = "<group>"; };
+		E3BD6F2D1D79830300770AD7 /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		E3BD6F2F1D7983FE00770AD7 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		E3BD6F311D79848500770AD7 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		E3BD6F331D7997B600770AD7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E3BD6EF51D78954B00770AD7 /* Theme.swift */,
+				E3BD6F331D7997B600770AD7 /* Icons.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 		E3BD6EF41D78953500770AD7 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3BD6F2F1D7983FE00770AD7 /* BaseView.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -222,7 +234,9 @@
 		E3BD6F021D789A2000770AD7 /* Test Detail */ = {
 			isa = PBXGroup;
 			children = (
+				E3BD6F2C1D7982E100770AD7 /* Views */,
 				E3BD6F041D789A8A00770AD7 /* TestDetailTableController.swift */,
+				E3BD6F2A1D797AE000770AD7 /* TestDetailTableController.xib */,
 			);
 			name = "Test Detail";
 			sourceTree = "<group>";
@@ -279,6 +293,15 @@
 				E3BD6F241D78BC2800770AD7 /* NavigationController.swift */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		E3BD6F2C1D7982E100770AD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3BD6F311D79848500770AD7 /* QuestionView.swift */,
+				E3BD6F2D1D79830300770AD7 /* QuestionView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +364,10 @@
 			files = (
 				E3BD6EE01D78938D00770AD7 /* LaunchScreen.storyboard in Resources */,
 				E3BD6EDD1D78938D00770AD7 /* Assets.xcassets in Resources */,
+				E3BD6F341D7997B600770AD7 /* Icons.xcassets in Resources */,
+				E3BD6F2E1D79830300770AD7 /* QuestionView.xib in Resources */,
 				E3BD6F291D78BF2500770AD7 /* MedicalTestResultController.xib in Resources */,
+				E3BD6F2B1D797AE000770AD7 /* TestDetailTableController.xib in Resources */,
 				E3BD6EDB1D78938D00770AD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +397,8 @@
 				E3BD6F081D789C0200770AD7 /* MedTest.swift in Sources */,
 				E3BD6EF11D78947800770AD7 /* BaseViewController.swift in Sources */,
 				E3BD6F1D1D78AB2D00770AD7 /* APIManager.swift in Sources */,
+				E3BD6F321D79848500770AD7 /* QuestionView.swift in Sources */,
+				E3BD6F301D7983FE00770AD7 /* BaseView.swift in Sources */,
 				E3BD6F051D789A8A00770AD7 /* TestDetailTableController.swift in Sources */,
 				E3BD6EF91D78962600770AD7 /* BasicExtentions.swift in Sources */,
 			);

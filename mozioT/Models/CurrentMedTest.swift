@@ -10,6 +10,16 @@ import UIKit
 
 class CurrentMedTest: MedTest {
     
-    var totalValue : Int?
+    var totalValue : Int = 0
     
+    init(medTest:MedTest){
+        super.init(dict: [:])
+        self.title = medTest.title
+        self.questions = medTest.questions
+        self.results = medTest.results
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }

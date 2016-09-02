@@ -37,11 +37,13 @@ class BaseViewController: UIViewController {
             let fixedItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
             fixedItem.width = 0;
             let backButton = UIButton(type: .Custom)
-            backButton.setImage(UIImage(named: "back_white.png"), forState: .Normal)
+            backButton.setImage(UIImage(named: "back_btn"), forState: .Normal)
             backButton.addTarget(self.navigationController, action: #selector(UINavigationController.popViewControllerAnimated(_:)), forControlEvents: .TouchUpInside)
             backButton.frame = CGRect(x: 0, y: 0, width: 30, height: 25)
             let backBarButton = UIBarButtonItem(customView: backButton)
             self.navigationItem.leftBarButtonItem = backBarButton
+        } else {
+            self.navigationItem.leftBarButtonItem = nil
         }
     }
 }

@@ -20,9 +20,12 @@ class AllTestsTableViewController: TableViewController {
         self.title = "Choose Medical Test"
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.leftBarButtonItem = nil
+    }
+    
     override func startLoadingData() {
         super.startLoadingData()
-        
         let req = TestRequest(options: RequestType.ALL_TESTS)
         APIManager.sendAPIRequest(req) { (response) in
             let tests = response.parsedObject["data"] as! Array<AnyObject>
@@ -48,5 +51,13 @@ class AllTestsTableViewController: TableViewController {
         cell?.textLabel?.text = object.title
         
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let object = self.tableArray[indexPath.row] as! MedTest
+        let destinationController = TestDetailTableController()
+        destinationController.medTest = CurrentMedTest(medTest: object)
+        self.navigationController?.pushViewController(destinationController, animated: true)
     }
 }

@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedicalTestResultController" customModule="mozioT" customModuleProvider="target">
             <connections>
+                <outlet property="lblTestName" destination="bv0-1w-lpm" id="KLl-tG-G7F"/>
+                <outlet property="lblTestResults" destination="FwD-n4-tNe" id="f7J-ss-XtO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,15 +17,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwD-n4-tNe">
-                    <rect key="frame" x="20" y="68" width="335" height="17"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST NAME HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bv0-1w-lpm">
+                    <rect key="frame" x="20" y="274.5" width="326" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST NAME HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bv0-1w-lpm">
-                    <rect key="frame" x="20" y="40" width="326" height="18"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwD-n4-tNe">
+                    <rect key="frame" x="20" y="302.5" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -31,8 +33,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="FwD-n4-tNe" secondAttribute="trailing" constant="20" id="0oC-2s-cxd"/>
-                <constraint firstItem="bv0-1w-lpm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="4fq-0k-bwd"/>
-                <constraint firstItem="bv0-1w-lpm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="FCj-5V-5uy"/>
+                <constraint firstItem="bv0-1w-lpm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="8An-8n-Z7J"/>
                 <constraint firstItem="FwD-n4-tNe" firstAttribute="top" secondItem="bv0-1w-lpm" secondAttribute="bottom" constant="10" id="IUa-7J-G5T"/>
                 <constraint firstAttribute="trailing" secondItem="bv0-1w-lpm" secondAttribute="trailing" constant="29" id="eV9-gI-MST"/>
                 <constraint firstItem="FwD-n4-tNe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fKI-xG-NEU"/>
@@ -40,11 +41,6 @@
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="4fq-0k-bwd"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="266.5" y="264.5"/>
         </view>
     </objects>

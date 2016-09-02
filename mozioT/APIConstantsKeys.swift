@@ -26,4 +26,6 @@ let k_status = "status"
 
 // LOCAL DATA
 
-let allTestJSON = "{\"status\": true,\"data\": [{    \"title\": \"Todd's Syndrome\"},{\"title\": \"Other Example\"}]}"
+let allTestJSON = "{\"status\":true,\"data\":[{    \"title\":\"Todd'sSyndrome\",    \"questions\":[    {        \"title\":\"ChooseGender?\",        \"body\":\"Thisletsusdecidethepossiblity\",        \"options\":[        {            \"title\":\"Male\",            \"value\":1        },        {            \"title\":\"Female\",            \"value\":0        }        ]    },    {        \"title\":\"ChooseGender?\",        \"body\":\"Thisletsusdecidethepossiblity\",        \"options\":[        {            \"title\":\"Male\",            \"value\":1},        {            \"title\":\"Female\",            \"value\":0        }        ]    }    ],    \"results\":[    {        \"title\":\"100%Likely\",        \"body\":\"100%Likely\",        \"value\":2    }    ]},{    \"title\":\"OtherExample\"}]}"
+
+//"{\"status\": true,\"data\": [{    \"title\": \"Todd's Syndrome\"},{\"title\": \"Other Example\"}]}"
