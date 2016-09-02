@@ -28,7 +28,7 @@ class MedicalTestResultController: BaseViewController {
                     return
                 }
             }
-            self.lblTestResults.text = "Unable to produce result."
+            self.lblTestResults.text = "Not likely to have this disorder"
             
         } else {
             self.lblTestName.text = ""
